@@ -7,10 +7,8 @@
     <string name="navigation_close_drawer">close drawer</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="map_box_token">pk.eyJ1IjoicmFnaHVsdGFtaWwiLCJhIjoiY2tsdHB2cmx4MGY2eTJubjhjaGF0ZmJybCJ9.ypzPl4DIDc5BRaW5Gss1Dg</string>
     <string name="popup_title">Information</string>
     <string name="popup_ok_button">Ok</string>
-    <string name="mapbox_map_style_url">mapbox://styles/raghultamil/cklxfcv8r3og617rydetr5ggp</string>
     <string name="view_timeline_text">View Timeline</string>
     <string name="key_asset_type">assetType</string>
     <string name="circle_seekbar_text">Seek Bar to increase circle Radius</string>
