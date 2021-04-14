@@ -1,7 +1,7 @@
 # JUMBOGPS-T3
 Team ID: JUMBOGPS-T3 | Team Members: Raghul &amp; Mayank Singh
 </br>**Tech Stack**</br>
-* web
+* Web
   * Front End
   * Backend 
     * Server side - spring boot (Java)
