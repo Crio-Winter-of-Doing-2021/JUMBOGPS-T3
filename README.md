@@ -3,6 +3,13 @@ Team ID: JUMBOGPS-T3 | Team Members: Raghul &amp; Mayank Singh
 </br>**Asset Tracker**</br>
 Asset Tracker is a application that is used to track the company's asset . A asset of a company may be a vehicle , device or a human . The purpose of the application is to tracker the exact location of a asset to check if it travels on the right path and to select a optimal route for a asset to travel.This application is developed in both android and web application 
 
+Following are the features implemented in android and web application
+* Android
+  * GeoFencing
+  * Anomaly detection(check the route of a asset whether it is going in the correct path or not)
+  * TimeLine(View the timeline of the asset last 24 hrs)
+  * Search (search based on asset name,asset type and time)
+
 </br>**Tech Stack**
 * Web
   * Front End
