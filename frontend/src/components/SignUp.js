@@ -109,7 +109,6 @@ class SignUp extends React.Component {
   render() {
     return (
       <>
-        {/* TODO: include custom header */}
         <Container component="main" maxWidth="xs">
           <CssBaseline />
           <CustomAppBar history={this.props.history} />
@@ -121,9 +120,7 @@ class SignUp extends React.Component {
               alignItems: "center",
             }}
           >
-            {/* upper div className={classes.paper} */}
             <Avatar>
-              {/* upper avatar  className={classes.avatar} */}
               <LockOutlinedIcon />
             </Avatar>
 
@@ -132,9 +129,7 @@ class SignUp extends React.Component {
             </Typography>
             <Box mt={2} />
             <form noValidate>
-              {/* upper form className={classes.form} */}
               <Grid container spacing={2}>
-                {/* email */}
                 <Grid item xs={12}>
                   <TextField
                     variant="outlined"
@@ -151,7 +146,6 @@ class SignUp extends React.Component {
                     }}
                   />
                 </Grid>
-                {/* mobile */}
                 <Grid item xs={12} sm={6}>
                   <TextField
                     autoComplete="mobileNo"
@@ -169,7 +163,6 @@ class SignUp extends React.Component {
                     }}
                   />
                 </Grid>
-                {/* username */}
                 <Grid item xs={12} sm={6}>
                   <TextField
                     autoComplete="username"
@@ -187,7 +180,6 @@ class SignUp extends React.Component {
                     }}
                   />
                 </Grid>
-                {/* password */}
                 <Grid item xs={12}>
                   <TextField
                     variant="outlined"
@@ -213,7 +205,6 @@ class SignUp extends React.Component {
                 color="primary"
                 onClick={this.register}
               >
-                {/* upper button className={classes.submit} */}
                 Sign Up
               </Button>
               <Box mt={2} />

@@ -13,11 +13,11 @@ const theme = createMuiTheme();
 
 export default function TimelineMap(props) {
   const [viewport, setViewport] = useState({
-    latitude: props.lat, //get latitude info from places which clicked on view timeline button
-    longitude: props.lon, //get longitude info from places which clicked on view timeline button
-    width: "100vw", //this is fine
-    height: "100vh", //this is fine
-    zoom: 17, //this is fine
+    latitude: props.lat, 
+    longitude: props.lon, 
+    width: "100vw",
+    height: "100vh", 
+    zoom: 17, 
   });
 
   let customid = props.assetId;
