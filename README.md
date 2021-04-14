@@ -9,6 +9,12 @@ Following are the features implemented in android and web application
   * Anomaly detection(check the route of a asset whether it is going in the correct path or not)
   * TimeLine(View the timeline of the asset last 24 hrs)
   * Search (search based on asset name,asset type and time)
+  * displaying the assets in  map
+* Web
+  * Search (search based on asset name,asset type and time)
+  * Timeline(View the timeline of the asset last 24 hrs)
+  * Geofencing
+  * displaying the assets in  map
 
 </br>**Tech Stack**
 * Web
