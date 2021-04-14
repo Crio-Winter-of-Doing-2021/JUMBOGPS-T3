@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_marginTop="16dp"
+            android:layout_width="100dp"
+            android:id="@+id/popup_assetimage"
+            android:layout_gravity="center"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_height="wrap_content"
+            android:text="Asset Name"/>
+
+        <TextView
+            android:id="@+id/popup_assetname"
+            android:textSize="20sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/asset"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            android:text="Asset Type"/>
+        <TextView
+            android:id="@+id/popup_assettype"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/asset"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            android:text="Asset Time"/>
+
+        <TextView
+            android:id="@+id/popup_assettime"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/asset"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/asset_view_timeline"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:textColor="@color/purple_500"
+                android:layout_height="wrap_content"
+                android:text="View Timeline"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/asset_geofence"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:textColor="@color/purple_500"
+                android:layout_height="wrap_content"
+                android:text="Geofence"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/asset_georoute"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:textColor="@color/purple_500"
+                android:layout_height="wrap_content"
+                android:text="Geo Route"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

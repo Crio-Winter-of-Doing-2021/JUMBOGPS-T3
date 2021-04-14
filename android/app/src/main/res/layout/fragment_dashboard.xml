@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/dashboard_fragment"
+    android:layout_height="match_parent"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.DashboardFragment">
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/assetMapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox:mapbox_renderTextureMode="true"
+        mapbox:mapbox_cameraZoom="11">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                mapbox:cardElevation="8dp"
+                mapbox:cardCornerRadius="10dp"
+                android:layout_margin="16dp"
+                android:id="@+id/search_layout">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        mapbox:startIconDrawable="@drawable/asset_search"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:hint="Search">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:id="@+id/asset_search"
+                            />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/asset_checkbox_layout">
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/asset_start_date_time_layout">
+                        <EditText
+                            android:visibility="gone"
+                            android:id="@+id/asset_start_date_holder"
+                            android:layout_margin="8dp"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:hint="Start Date"/>
+                        <EditText
+                            android:visibility="gone"
+                            android:id="@+id/asset_start_time_holder"
+                            android:layout_margin="8dp"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:hint="Start Time"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/asset_end_date_time_layout">
+                        <EditText
+                            android:visibility="gone"
+                            android:id="@+id/asset_end_date_holder"
+                            android:layout_margin="8dp"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:hint="End Date"/>
+                        <EditText
+                            android:visibility="gone"
+                            android:id="@+id/asset_end_time_holder"
+                            android:layout_margin="8dp"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:hint="End Time"/>
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_margin="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/asset_include_time"
+                            android:text="Include Time"/>
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/asset_search_button"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Search"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/set_geofence_layout"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_alignParentBottom="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/circle_seekbar_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="18sp"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                        android:text="@string/circle_seekbar_text"/>
+                    <TextView
+                        android:layout_below="@id/circle_seekbar_header"
+                        android:id="@+id/circle_radius"
+                        android:layout_marginLeft="16dp"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Radius"/>
+                    <SeekBar
+                        android:layout_below="@id/circle_radius"
+                        android:id="@+id/circle_seekbar"
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:progress="50"
+                        android:maxHeight="20dp"
+                        android:thumbTint="@color/purple_500"
+                        android:layout_height="wrap_content"/>
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/set_geofence_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Set Fence"
+    android:layout_marginRight="8dp"
+    android:layout_below="@id/circle_seekbar"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    />
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel"
+                        android:textColor="@color/purple_500"
+                        android:id="@+id/geofence_cancel_button"
+                        android:layout_toLeftOf="@id/set_geofence_button"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginRight="8dp"/>
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/set_direction_button"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:text="Set Direction"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+
+    </com.mapbox.mapboxsdk.maps.MapView>
+
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">AssetTracker</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="asset">Asset</string>
+    <string name="home">Home</string>
+    <string name="navigation_open_drawer">open drawer</string>
+    <string name="navigation_close_drawer">close drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="map_box_token">pk.eyJ1IjoicmFnaHVsdGFtaWwiLCJhIjoiY2tsdHB2cmx4MGY2eTJubjhjaGF0ZmJybCJ9.ypzPl4DIDc5BRaW5Gss1Dg</string>
+    <string name="popup_title">Information</string>
+    <string name="popup_ok_button">Ok</string>
+    <string name="mapbox_map_style_url">mapbox://styles/raghultamil/cklxfcv8r3og617rydetr5ggp</string>
+    <string name="view_timeline_text">View Timeline</string>
+    <string name="key_asset_type">assetType</string>
+    <string name="circle_seekbar_text">Seek Bar to increase circle Radius</string>
+    <string name="channel_geofence">GeoFence</string>
+    <string name="notification">Notification</string>
+    <string name="settings">Settings</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="logout">Logout</string>
+</resources>
