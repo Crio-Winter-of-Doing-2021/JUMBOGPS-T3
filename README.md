@@ -1,6 +1,9 @@
 # JUMBOGPS-T3
 Team ID: JUMBOGPS-T3 | Team Members: Raghul &amp; Mayank Singh
-</br>**Tech Stack**</br>
+</br>**Asset Tracker**</br>
+Asset Tracker is a application that is used to track the company's asset . A asset of a company may be a vehicle , device or a human . The purpose of the application is to tracker the exact location of a asset to check if it travels on the right path and to select a optimal route for a asset to travel.This application is developed in both android and web application 
+
+</br>**Tech Stack**
 * Web
   * Front End
   * Backend 
