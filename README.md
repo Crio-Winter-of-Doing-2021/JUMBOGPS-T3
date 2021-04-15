@@ -19,6 +19,8 @@ Following are the features implemented in android and web application
 </br>**Tech Stack**
 * Web
   * Front End
+    * React 
+    * Maps - Mapbox API
   * Backend 
     * Server side - spring boot (Java)
     * Database - RDBMS (MySQL)
